@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/output.css">
+  
+  <title>Intro component with sign up form | Frontend Mentor</title>
+
+</head>
+<body class="font-main bg-[#FF7A7A]">
+  <main class="text-white flex-col min-w-screen min-h-screen pt-20 pb-20 pl-4 pr-4 flex justify-center items-center gap-12 bg-[url(/images/bg-intro-mobile.png)] bg-repeat bg-contain md:bg-[url(/images/bg-intro-desktop.png)] md:flex-row md:pt-0 md:pb-0">
+    <header class="text-center md:text-left">
+      <h1 class="font-bold max-w-125 text-3xl mb-7 md:text-5xl">Learn to code by watching others</h1>
+      <p class="font-normal max-w-125">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </header>
+
+    <section class="md:grow max-w-135">
+      <h2 class="bg-[#5E54A4] mb-6 text-center pt-4 pb-4 pl-13 pr-13 rounded-lg cursor-pointer active:translate-y-2 active:shadow-none shadow-[0px_8px_0px_rgba(80,80,80,0.35)]">
+        <span class="font-semibold text-center">Try it free 7 days</span> then $20/mo. thereafter
+      </h2>
+      <form action="" method="POST" novalidate class="bg-white text-gray-950 p-6 flex gap-3 rounded-lg flex-col justify-center items-center shadow-[0px_8px_0px_rgba(80,80,80,0.35)] md:p-8">
+        <div id="boxName" class="w-full relative">
+          <input id="firstName" class="border-[1.5px] w-full border-gray-200 font-semibold p-4 rounded md:pl-8" type="text" placeholder="First Name">
+          <span id="displayFirstName" class="block mt-1 w-full text-right text-red-400 text-[10px] italic"></span>
+        </div>
+        <div id="boxLName" class="w-full relative">
+          <input id="lastName" class="border-[1.5px] border-gray-200 w-full font-semibold p-4 rounded md:pl-8" type="text" placeholder="Last Name">
+          <span id="displayLastName" class="block mt-1 w-full text-right text-red-400 text-[10px] italic"></span>
+        </div>
+        <div id="boxEmail" class="w-full relative">
+          <input id="email" class="border-[1.5px] border-gray-200 w-full font-semibold p-4 rounded md:pl-8" type="email" placeholder="Email Address">
+          <span id="displayEmail" class="block mt-1 w-full text-right text-red-400 text-[10px] italic"></span>
+        </div>
+        <div id="boxPass" class="w-full relative">
+          <input id="pass" class="border-[1.5px] border-gray-200 w-full font-semibold p-4 rounded md:pl-8" type="password" placeholder="Password">
+          <span id="displayPassword" class="block mt-1 w-full text-right text-red-400 text-[10px] italic"></span>
+        </div>
+        <button type="submit" class="bg-[#38CC8C] hover:bg-[#6fe3b5] w-full pb-6 pt-7 text-white tracking-widest font-medium rounded cursor-pointer leading-0 shadow-[0px_5px_0px_#5eb982] active:translate-y-1.25 active:shadow-none">CLAIM YOUR FREE TRIAL</button>
+        <p class="text-gray-400 pr-4 pl-4 text-[12px] text-center">By clicking the button, you are agreeing to our <span class="text-red-400 font-semibold">Terms and Services</span></p>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p class="attribution flex justify-center min-w-screen text-white flex-wrap">
+      Challenge by&nbsp;<a class="underline" href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by&nbsp;<a class="underline" href="https://www.frontendmentor.io/profile/jymnastiar">Jymnastiar</a>.
+    </p>
+  </footer>
+</body>
+<script src="script.js"></script>
+</html>
